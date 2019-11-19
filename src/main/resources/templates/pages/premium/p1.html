@@ -1,0 +1,20 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div align="center" class="form-inline">
+	<span th:utext="${session.username}?'Welcome '+${session.username}:'Welcome Guest'">Welcome to Page</span>
+	<span ><a href="" th:href="@{/logout}">Logout</a></span>
+</div>
+<hr></hr>
+<th:block th:if="not ${session.level2}">
+	<div th:replace="~{deny_error::no_permission}">		
+	</div>
+</th:block>
+<th:block th:if="${session.level2}">
+	<div>	
+		<p>恭喜你得到了一个红包</p>	
+	</div>
+</th:block>
+</body>
+</html>

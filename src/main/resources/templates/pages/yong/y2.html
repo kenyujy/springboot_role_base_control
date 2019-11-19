@@ -1,0 +1,12 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div align="center" class="form-inline">
+    <span th:utext="${session.username}?'Welcome '+${session.username}:'Welcome Guest'">Welcome to Page</span>
+    <span ><a href="" th:href="@{/logout}">Logout</a></span>
+</div>
+<hr></hr>
+<p>文字文字一段</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div align="center" class="form-inline">
+	<span th:utext="${session.username}?'Welcome '+${session.username}:'Welcome Guest'">Welcome to Page</span>
+	<span ><a href="" th:href="@{/logout}">Logout</a></span>
+</div>
+<hr></hr>
+<div><!-- total div -->
+<div style="width:45%; display:inline-table;">something here</div>
+<div style="width:50%; display:inline-table;"> <!-- big div -->
+	<div >
+		<table>
+			<tr>
+				<th>Music lable</th>
+			</tr>
+			<tbody>
+			<tr>
+				<td><a href="./pages/yong/y1.html" th:href="@{/pages/management/manage}">Admin</a></td>
+			</tr>
+			<tr>				
+				<td><a href="./pages/yong/y1.html" th:href="@{/pages/yong/y1}">Classic</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/yong/y2.html">Country</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/yong/y3.html">Rock n Roll</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div >
+		<table>
+			<tr>
+				<th>Music lable 2</th>
+			</tr>
+			<tbody>
+			<tr>				
+				<td><a href="./pages/premium/p1.html">Metal</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/premium/p2.html">Folk</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/premium/p3.html">POP</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div >
+		<table>
+			<tr>
+				<th>Music lable 3</th>
+			</tr>
+			<tbody>
+			<tr>				
+				<td><a href="./pages/extra/e1.html">Rap</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/extra/e2.html">BillBoard</a></td>
+			</tr>
+			<tr>
+				<td><a href="./pages/extra/e3.html">Award Wining</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- big div end -->
+</div><!-- total div -->
+</body>
+</html>
